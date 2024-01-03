@@ -1,0 +1,11 @@
+If the list of buildings was dynamic, we would need a data structure
+that could handle updating our buildings list to the new size
+even when we insert a new one. We could use an AVL tree data structure
+that could help with a height imbalance, so say we place all our buildings
+in the tree, and if we have inserted another one. Then the list(tree height) would
+become unbalanced. So to rectify this we would need to use rotations and update
+the height at each node. Also the height would in essence be the size of the building,
+so we could get the tallest building smaller than height of permit requested.
+Runtime complexity- in the case of rotations that would happen in O(log n) time. Considering
+this is the most taxing operation for an AVL tree O(log n) would be the runtime. 
+
